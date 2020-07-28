@@ -1,0 +1,636 @@
+<html>
+	
+
+	
+<style>
+	
+@font-face {
+	font-family: myVF;
+	src: url('https://marcodagolini.github.io/vfalbania/Fonts/VFreg.ttf');
+	src: url('https://marcodagolini.github.io/vfalbania/Fonts/VFreg.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+		 url('https://marcodagolini.github.io/vfalbania/Fonts/VFreg.ttf')  format('truetype'), /* Safari, Android, iOS */
+		 url('https://marcodagolini.github.io/vfalbania/Fonts/VFreg.svg#svgFontName') format('svg'); /* Legacy iOS */
+	
+	}
+	
+.myLivePersonEngagement {
+
+    height: 150px !important;
+    width: 250px !important;
+    position:absolute !important;
+    bottom: 20px !important;
+    right: 20px !important;
+}
+
+	
+
+.little_disclaimer_lp{
+   float: left;
+   margin-top: 5px;
+   margin-left: 60px;
+   font-size: 12.5px;
+   color: #4a4d4e;
+   font-family: myVF;
+}
+.header_text_lp{
+   float: left;
+   margin: 10px;
+   color: white;
+}
+
+.startChat_lp {
+    background-color: #e60000;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 4px;
+    cursor: pointer;
+    border-radius: 4px;
+    position: absolute;
+    bottom:5px;
+    left: 10px;
+    margin: 20px 20px;
+    font-family: myVF;
+    width: 289px;
+
+}
+.startChat_lp:hover {
+    background-color: #cf0000;
+    color: white;	
+}
+
+.startChat_lp:disabled,
+.startChat_lp[disabled]{
+  background-color: #ff8a8a;
+  opacity: 0.5;
+}
+	
+.showContainer_lp {
+  background:url(https://www.vodafone.al/ext_files/TOBi/icon_shadow.png) no-repeat;
+  background-size: cover;
+  width: 100px;
+  height: 100px;
+  position: relative;
+}
+
+.engagement_lp{
+  right:0px;
+  bottom: 0px;
+  width: 370px;
+  height: 220px;
+  position:absolute;
+
+}
+
+.disclaimer_lp{
+  position: relative;
+  width: 200px;
+  height: 200px;
+}
+
+.container_disclaimer_lp{
+  visibility:hidden;
+  background-color: #ebebeb;
+  position: absolute;
+  top: 0px;
+  width: 350px;
+  height: 214px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  border: 1px transparent;
+  border-radius: 10px;
+  font-family: myVF;
+}
+
+.header_disclaimer_lp{
+  background-color: #e60000;
+  background-size: cover;
+  position: relative;
+  width:350px;
+  height: 40px;
+  border-radius: 10px 10px 0px 0px;
+}
+	
+
+</style>
+	
+	
+ <head>
+
+ 
+	 
+	 
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"/> 
+	
+
+
+	 
+
+<script type="text/javascript">
+	
+	
+	window.lpTag=window.lpTag||{},'undefined'==typeof window.lpTag._tagCount?(window.lpTag={wl:lpTag.wl||null,scp:lpTag.scp||null,site:'75070639'||'',section:lpTag.section||'',tagletSection:lpTag.tagletSection||null,autoStart:lpTag.autoStart!==!1,ovr:lpTag.ovr||{},_v:'1.10.0',_tagCount:1,protocol:'https:',events:{bind:function(t,e,i){lpTag.defer(function(){lpTag.events.bind(t,e,i)},0)},trigger:function(t,e,i){lpTag.defer(function(){lpTag.events.trigger(t,e,i)},1)}},defer:function(t,e){0===e?(this._defB=this._defB||[],this._defB.push(t)):1===e?(this._defT=this._defT||[],this._defT.push(t)):(this._defL=this._defL||[],this._defL.push(t))},load:function(t,e,i){var n=this;setTimeout(function(){n._load(t,e,i)},0)},_load:function(t,e,i){var n=t;t||(n=this.protocol+'//'+(this.ovr&&this.ovr.domain?this.ovr.domain:'lptag.liveperson.net')+'/tag/tag.js?site='+this.site);var o=document.createElement('script');o.setAttribute('charset',e?e:'UTF-8'),i&&o.setAttribute('id',i),o.setAttribute('src',n),document.getElementsByTagName('head').item(0).appendChild(o)},init:function(){this._timing=this._timing||{},this._timing.start=(new Date).getTime();var t=this;window.attachEvent?window.attachEvent('onload',function(){t._domReady('domReady')}):(window.addEventListener('DOMContentLoaded',function(){t._domReady('contReady')},!1),window.addEventListener('load',function(){t._domReady('domReady')},!1)),'undefined'===typeof window._lptStop&&this.load()},start:function(){this.autoStart=!0},_domReady:function(t){this.isDom||(this.isDom=!0,this.events.trigger('LPT','DOM_READY',{t:t})),this._timing[t]=(new Date).getTime()},vars:lpTag.vars||[],dbs:lpTag.dbs||[],ctn:lpTag.ctn||[],sdes:lpTag.sdes||[],hooks:lpTag.hooks||[],identities:lpTag.identities||[],ev:lpTag.ev||[]},lpTag.init()):window.lpTag._tagCount+=1;
+
+	
+	function adjust(data, eventInfo){
+		 
+		 $('.lp_floating').css('opacity', 1)
+		 
+
+		 if(data.state === "waiting"){
+			 setTimeout(function(){
+				 var isMacLike = /(Mac|iPhone|iPod|iPad)/i.test(navigator.platform);
+				 var isIOS = /(iPhone|iPod|iPad)/i.test(navigator.platform);
+
+				 if (isMacLike || isIOS) {
+					 jQuery(".lpview_form_textarea").blur();
+					 var $htmlOrBody = jQuery('html, body'); // scrollTop works on <body> for some browsers, <html> for others
+					 jQuery('.lpview_form_textarea').focus(function() {
+						 setTimeout(function(){
+							 $htmlOrBody.scrollTop(jQuery('.lp_bottom_area').height());
+						 }, 400);
+					 });
+				 }
+				 
+			 }, 1000);
+		 }
+	}
+	 
+	 function offeredOrNot(){
+		 
+		 
+		 jQuery("#showContainer_lp").click(function(){
+			  jQuery(".showContainer_lp").css("visibility","hidden");
+			  jQuery(".container_disclaimer_lp").css("visibility","visible");
+		  });
+		 
+		 jQuery("#accept_lp").change(function() {
+			 jQuery('#accept_lp').prop('disabled', true);
+			 setTimeout(function(){
+				 jQuery('#accept_lp').prop('disabled', false);
+			 }, 200);
+		 });
+		  
+		  jQuery("#accept_lp").mouseup(function() {
+			  
+			  if (!jQuery(this).is(':checked')) {
+				  jQuery("#startChat_lp").prop( "disabled", false );
+				  
+			  } else{
+				  jQuery("#startChat_lp").prop( "disabled", true );
+			  }
+			  
+			  
+		  });
+		  
+		  jQuery("#closeDisclaimer_lp").click(function(){
+			  jQuery(".showContainer_lp").css("visibility","visible");
+			  jQuery(".container_disclaimer_lp").css("visibility","hidden");
+		  });
+		 
+
+		 
+		 
+		 
+	 }
+	
+	
+		lpTag.events.bind({
+			 eventName : "state",
+			 appName : "lpUnifiedWindow",
+			 func: adjust,
+			 triggerOnce : false
+		 });
+		 
+		 
+		 lpTag.events.bind({
+			 eventName : "OFFER_IMPRESSION",
+			 appName : "LP_OFFERS",
+			 func: offeredOrNot,
+			 triggerOnce : false
+
+		 });
+	 
+	 </script>
+
+	 
+	
+	 
+	 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	 
+	 <script>
+		 
+	function sendLocation(){
+		 setTimeout(function(){
+			 var CurrentLocation = window.location.href;
+			 lpTag.newPage(CurrentLocation, {section: "production"});
+			 lpTag.sdes.push({
+				 "type": "ctmrinfo",
+				 "info": {
+					 customerId: '1'
+				 }
+			 });
+		 }, 1000);
+	 }
+		 
+		 
+		 
+	 function addLanguage(){
+		
+		 lpTag.unifiedWindow.addLanguage({
+			 chattingWith: "{{agent_name}}",
+			 connecting: "Duke u lidhur",
+			 message_us: "Na shkruaj",
+			 ended: "Faleminderit",
+			 loader_title: "Në ngarkim",
+			 chatting: "Chat",
+			 preChat: "Chat me ne",
+			 preSms: "Na shkruaj",
+			 postChat: "Faleminderit",
+			 offline: "Na kontakto",
+			 endedAndTranscriptShown: "Chat transkript",
+			 closeWindowAreYouSureMsg: "Nëse mbyllet, biseda do të përfundojë",
+			 closeWindowOkBtn: "OK",
+			 closeWindowCancelBtn: "Fshij",
+			 closeChatAreYouSureMsg: "Je i sigurtë që dëshiron të shkëputesh?",
+			 closeChatDisconnectBtn: "Shkëput",
+			 closeChatCancelBtn: "Fshij",
+			 tooltip_NewMessageNotification: "Ti ke {{notificationCount}} {{notificationMsg}} të reja",
+			 tooltip_EmailTranscriptSentConfirmation: "Transkripti do të dërgohet pas përfundimit të bisedës",
+			 tooltip_Message: "mesazh",
+			 tooltip_Messages: "mesazhe",
+			 tooltip_Close: "Mbyll",
+			 tooltip_Download: "You may be required to allow pop-ups to download files",
+			 tooltip_ExpandActionMenu: "Hap menu",
+			 tooltip_CollapseActionMenu: "Mbyll menu",
+			 tooltip_SendIcon: "Dërgo",
+			 tooltip_SendIconDisabled: "Ti nuk je i lidhur në bisedë",
+			 tooltip_Minimize: "Zvogëlo",
+			 tooltip_Maximize: "Zmadho",
+			 tooltip_MuteButton: "Mute",
+			 tooltip_UnmuteButton: "Unmute",
+			 tooltip_Print: "Print transkript",
+			 tooltip_Email: "Email transkript",
+			 tooltip_EndChat: "Përfundo bisedën",
+			 tooltip_Popout: "Pop out",
+			 tooltip_Popin: "Pop in",
+			 tooltip_Lock: "Ky është një chat i sigurtë",
+			 tooltip_Loader: "Në ngarkim",
+			 tooltip_EmailClearField: "Pastro",
+			 tooltip_AutoBlockCreditCardPatternsMessage: "We have blocked some of your personal details from displaying.  Please do not share personal or sensitive information during the conversation.",
+			 tooltip_open_widgets: "Open widgets",
+			 tooltip_close_widgets: "Close widgets",
+			 tooltip_refresh_slider: "Refresh widget",
+			 tooltip_minimize_slider: "Minimize widget",
+			 tooltip_maximize_slider: "Maximize widget",
+			 tooltip_ConnectionIssue: "Lidhja e pastabilizuar",
+			 tooltip_ConnectionReEstablished: "Lidhja u stabilizua",
+			 tooltip_CloseToStartChat: "To start a chat please close this window",
+			 tooltip_CloseToStartConversation: "To start a messaging conversation please close this window",
+			 tooltip_FileTypeValidation: "File type should be PNG, JPG or GIF",
+			 tooltip_FileTypeValidationExpanded: "File type should be PNG, JPG, GIF, PDF, DOCX, XLSX or PPTX",
+			 tooltip_FileSizeValidation: "File size should be 5 MB or less",
+			 tooltip_FileSizeValidation15: "File size should be 15 MB or less",
+			 tooltip_EmojiIcon: "Zgjidh Emoji",
+			 windowTitle: "Të duhet ndihmë?",
+			 defaultTextBoxText: "Shkruaj këtu",
+			 welcomeMessage: "Si mund t'ju ndihmojmë?",
+			 thankYouMessage: "Faleminderit që na shkruajte",
+			 thankYouMessagePreSms: "Text conversation started with {{phoneNumber}}. A representative should text you soon.",
+			 visitorChatLineSentError: "Error sending message",
+			 dragFilesMessage: "Drag files here",
+			 dropFilesMessage: "Drop files here",
+			 at: "në",
+			 me: "Unë",
+			 you: "Ti",
+			 info: "Info",
+			 agent: "Agjent",
+			 authExpired: "Your verification has expired. You are being directed to re-login. Please press here in order to redirect immediately.",
+			 unauthExpired: "Your verification has expired. Click below to reload the conversation.",
+			 reload: "Reload",
+			 redirect: "Redirect",
+			 relogin: "Sesioni përfundoi",
+			 secureForm_line_send: "{{agentName}} has sent you a Secure Form: {{secureFormName}}",
+			 secureForm_link_title_send: "{{agentName}} has sent you a Secure Form",
+			 secureForm_line_submit: "The following Secure Form has been submitted: {{secureFormName}}",
+			 secureForm_link_title_submit: "The following Secure Form has been submitted",
+			 secureFormSubmittedMessage: "The form has been submitted successfully. <br>To protect your information, submitted forms cannot be reopened.",
+			 secureFormOpenedInAnotherTabMessage: "The Secure Form could not be opened. Please submit the Secure Form from the tab where the interaction began.",
+			 secureFormErrorMessage: "The Secure Form could not be opened. <br>Please contact your agent for assistance.",
+			 monthJanuary: "Janar",
+			 monthFebruary: "Shkurt",
+			 monthMarch: "Mars",
+			 monthApril: "Prill",
+			 monthMay: "Maj",
+			 monthJune: "Qershor",
+			 monthJuly: "Korrik",
+			 monthAugust: "Gusht",
+			 monthSeptember: "Shtator",
+			 monthOctober: "Tetor",
+			 monthNovember: "Nëntor",
+			 monthDecember: "Dhjetor",
+			 weekDaySunday: "E dielë",
+			 weekDayMonday: "E hënë",
+			 weekDayTuesday: "E martë",
+			 weekDayWednesday: "E mërkure",
+			 weekDayThursday: "E enjte",
+			 weekDayFriday: "E premte",
+			 weekDaySaturday: "E shtunë",
+			 daySuffix: "",
+			 dayMonthGap: " ",
+			 logoAltText: "Logo",
+			 agentPicAltText: "Agent picture",
+			 lpLogo: "LivePerson logo",
+			 errorIconAltText: "Error",
+			 dialog_email_transcript: "Send transcript to:",
+			 EmailTranscriptAction: "Email\ntranscript",
+			 inputEmailError: "Enter a valid email address. Format: you@domain.com",
+			 defaultEmailInputText: "Enter email*",
+			 transcriptSubject: "Your chat transcript",
+			 transcriptAreaLabel: "Chat messages",
+			 transcriptConvResolvedByAgent: "Biseda u mbyll nga agjenti {{time}}",
+			 transcriptConvResolvedByVisitor: "Biseda u mbyll nga ti {{time}}",
+			 transcriptTtrMessage: "Ne do të përgjigjemi në {{time}}",
+			 transcriptShortlyMessage: "Një agjent do të të përgjigjet shpejt",
+			 transcriptTtrOffHoursMessage: "Jemi jashtë orarit të punës. Ne do të përgjigjemi në {{time}}",
+			 transcriptForPhotoSharingImage: "Shared content is not available",
+			 transcriptRotatorDefaultMessage: "Duke ngarkuar historinë",
+			 transcriptRotatorFirstMessage: "Në ngarkim",
+			 transcriptRotatorSecondMessage: "Failed to load history. ",
+			 transcriptRotatorLinkText: "Retry",
+			 idnvDialogTitle: "Please enter characters {{idnvChar1}} and {{idnvChar2}} from your {{idnvType}}",
+			 idnvInputError: "Complete both required fields",
+			 idnvFormCancelled: "The identification form was not submitted",
+			 idnvFormSubmitted: "You have submitted characters {{idnvChar1}} and {{idnvChar2}} from your {{idnvType}}.",
+			 idnvAnswer: "Characters are {{idnvAnswer1}} and {{idnvAnswer2}}",
+			 idnvSendLineError: "Identification form could not be submitted",
+			 MuteSoundAction: "Mute",
+			 UnmuteSoundAction: "Unmute",
+			 PrintTranscriptAction: "Print\ntranscript",
+			 MarkUrgentAction: "Mark as urgent",
+			 DismissUrgentAction: "Dismiss urgent",
+			 EndChatAction: "End\nconversation",
+			 PopOutAction: "Pop out",
+			 PopInAction: "Pop in",
+			 PopOutAction_topbar: "Click to pop out",
+			 PopInAction_topbar: "Click to pop in",
+			 ForgetMeAction: "Clear history",
+			 SharePhotoAction: "Send\nimage",
+			 AddAttachmentAction: "Add\nattachment",
+			 error: "Error",
+			 couldNotConnect: "Oops - unable to connect",
+			 tryAgain: "Try again",
+			 loadingOnMinimize: "Loading",
+			 loading: "Loading",
+			 unableToConnect: "Unable to connect",
+			 reconnect: "Trying to reconnect",
+			 chatEndedOnExternalWindow: "Close window in order to start new chat",
+			 externalWindowOpen: "You have an ongoing chat. Return to that window to continue the chat.",
+			 unsupportedBrowserMode: "Your browser may be in incognito mode, or it may be blocking third party cookies. Please open a regular browser session to chat, or check your browser privacy settings",
+			 cannotResumeChat: "Resume chat from the tab where the interaction began",
+			 crossDomainError: "Cannot resume conversation, please return to previous page to continue.",
+			 chatAuthError: "Go back to the previous page or log in to continue your conversation.",
+			 confirmMessage: "Closing the conversation means that you won’t be able to continue even if you go back or log in. Are you sure you want to proceed?",
+			 startConversationError: "Please refresh the page and start a new conversation.",
+			 connectionUnavailable: "Connection unavailable",
+			 sessionExpired: "Session expired",
+			 sessionError: "Your session has expired. Please close this window and start a new conversation in order to resume.",
+			 sharkSessionExpired: "Please refresh the page and start a new conversation.",
+			 agentIsTypingText: "Agjenti po shkruan...",
+			 forget_me_dialog: "Are you sure you want to clear your conversation history?",
+			 forget_me_dialog_subtitle_on_active_chat: "If you choose “yes” the conversation will end and your conversation history will no longer be available from this device.",
+			 forget_me_dialog_subtitle: "If you choose “yes” your conversation history will no longer be available from this device",
+			 forget_me_dialog_close_window: "Are you sure you want to clear your conversation history?",
+			 forget_me_dialog_subtitle_on_active_chat_close_window: 'If you choose "Yes" the conversation will be closed automatically and your history will no longer be available when you reopen the window.',
+			 forget_me_dialog_subtitle_close_window: 'If you choose "Yes" the conversation will be closed automatically and your history will no longer be available when you reopen the window.',
+			 end_chat_alert: "Dëshiron të përfundosh bisedën?",
+			 yes: "Po",
+			 no: "Jo",
+			 preChatButton: "Dërgo",
+			 surveyRequireField: "Complete the required field",
+			 surveyRequireOption: "Required field. Select an option.",
+			 surveyRequireCheckbox: "Required field. Select at least one option.",
+			 surveyRequireNumericField: "Only numbers can be used in this field",
+			 surveyRequireValidEmail: "Enter a valid email address. Format: you@domain.com",
+			 surveyRequireValidPhone: "Enter a valid phone number.",
+			 surveyMaximumChars: "Cannot include more than {{specify_number}} characters in this field",
+			 surveyIllilgalCharacters: "One or more of the characters entered are not valid. Do not use: &lt;, &gt;, &quot;",
+			 surveyGeneralError: "An error has been encountered. Please review the survey and resubmit.",
+			 surveyLabel: "Complete the survey",
+			 offlineButton: "Dërgo",
+			 exitButton: "Dërgo",
+			 defaultSelect: "Choose item from the list",
+			 defaultTextArea: "Shkruaj këtu",
+			 submit: "Dërgo",
+			 back: "Prapa",
+			 next: "Përpara",
+			 startChat: "Chat",
+			 closeWindowText: "You have an active engagement",
+			 cancel: "Fshij",
+			 ok: "OK",
+			 close: "Mbyll",
+			 send: "Dërgo",
+			 insertTextHere: "Shkruaj këtu",
+			 IN_SESSION: "Resume chat from the tab where the interaction began",
+			 IN_PRE_CHAT: "Return to the tab with the survey to start chat",
+			 IN_CHAT: "Please refresh the page to resume chat",
+			 captchaTitle: "Na shkruaj",
+			 captchaEnterText: "Type the text shown",
+			 captchaRefreshButton: "Try another text",
+			 captchaAudioButton: "Try audio",
+			 captchaTextButton: "Try text",
+			 captchaMessageError: "Verification failed. Please try again.",
+			 captchaAccessDenied: "Maximum number of tries exceeded",
+			 messagingState_PENDING: "Pezull",
+			 messagingState_SENT: "Dërguar",
+			 messagingState_ACCEPT: "Pranuar",
+			 messagingState_READ: "Lexuar",
+			 messagingState_ERROR: "I pa pranuar",
+			 messagingState_image_ERROR: "This file failed to upload.<br>Please try another file.",
+			 messagingState_image_RETRY: "This file failed to upload.<br>Please try again.",
+			 csatLevel_0: "",
+			 csatLevel_1: "Shumë i/e pakënaqur",
+			 csatLevel_2: "I/E pakënaqur",
+			 csatLevel_3: "Neutral",
+			 csatLevel_4: "I/E kënaqur",
+			 csatLevel_5: "Shumë i/e kënaqur",
+			 outOf: "out of",
+			 csatTheAgent: "Agjenti",
+			 csatRatingQuestion: "Si do e vlerësoje bisedën e zhvilluar me agjentin?",
+			 csatDisclaimer: "Vlerësimi yt na ndihmon të përmirësohemi",
+			 cobrowseInvitation: "Po të ftoj për ndarë së bashku ekranin, në mënyrë që të të ndihmoj më mirë. Për të filluar, të lutem, kliko Pranoj.",
+			 cobrowseAcceptBtn: "Pranoj",
+			 cobrowseRejectBtn: "Refuzoj",
+			 cobrowseInvitationHeading: "Ftesë për të ndarë ekranin",
+			 cobrowseSessionStarting: "Duke filluar sesionin e përbashkët...",
+			 cobrowseInvitationRejected: "Ftesa u refuzua",
+			 cobrowseLine_cobrowseAccepted: "Ftesa u pranua",
+			 cobrowseLine_cobrowseDeclined: "Ftesa u refuzua",
+			 cobrowseLine_cobrowseTimeout: "Ftesa e marrë skadoi",
+			 cobrowseLine_cobrowseOffered: "{{agentName}} të ka ftuar në një sesion për të ndarë ekranin",
+			 cobrowseLine_cobrowseCanceled: "Ftesa u anullua nga {{agentName}}",
+			 video_cobrowseInvitation: "I have invited you to a video call. To start, please click Accept.",
+			 video_cobrowseConnecting: "Duke u lidhur",
+			 video_cobrowseConnectingPermission: "Camera and microphone access are required. Please accept these permissions when prompted by your browser.",
+			 video_cobrowseAcceptBtn: "Prano",
+			 video_cobrowseRejectBtn: "Refuzo",
+			 video_cobrowseInvitationHeading: "Video Call",
+			 video_cobrowseSessionStarting: "Starting a Call...",
+			 video_cobrowseInvitationRejected: "Call has been rejected",
+			 video_cobrowseLine_cobrowseAccepted: "Call accepted",
+			 video_cobrowseLine_cobrowseDeclined: "Call rejected",
+			 video_cobrowseLine_cobrowseTimeout: "You missed a call from {{agentName}}",
+			 video_cobrowseLine_cobrowseOffered: "{{agentName}} has called you",
+			 video_cobrowseLine_cobrowseCanceled: "Call was cancelled by {{agentName}}",
+			 voice_cobrowseInvitation: "I have invited you to a voice call. To start, please click Accept.",
+			 voice_cobrowseConnecting: "Connecting",
+			 voice_cobrowseConnectingPermission: "Microphone access is required. Please accept this permission when prompted by your browser.",
+			 voice_cobrowseAcceptBtn: "Accept",
+			 voice_cobrowseRejectBtn: "Reject",
+			 voice_cobrowseInvitationHeading: "Voice Call",
+			 voice_cobrowseSessionStarting: "Starting a Call...",
+			 voice_cobrowseInvitationRejected: "Call has been rejected",
+			 voice_cobrowseLine_cobrowseAccepted: "Call accepted",
+			 voice_cobrowseLine_cobrowseDeclined: "Call rejected",
+			 voice_cobrowseLine_cobrowseTimeout: "You missed a call from {{agentName}}",
+			 voice_cobrowseLine_cobrowseOffered: "{{agentName}} has called you",
+			 voice_cobrowseLine_cobrowseCanceled: "Call was cancelled by {{agentName}}",
+			 voice_cobrowseActiveCallTooltip: "You are in a voice call",
+			 richContentSent: "<< Sent Rich Content >>",
+			 browserNotifications_newMessageTitle: "Mesazh i ri nga {{agentName}}",
+			 browserNotifications_newMessages: "mesazhe të reja",
+			 browserNotifications_richContent: "{{agentName}} has shared rich content with you",
+			 browserNotifications_image: "{{agentName}} has shared an image with you",
+			 browserNotifications_file: "{{agentName}} has shared a file with you",
+			 ts_Now: "Tani",
+			 ts_Today: "Sot",
+			 ts_Yesterday: "Dje"
+		 }, {
+			 locale: "en-US"
+		 });
+		 
+	 }
+		 
+	 sendLocation();
+		 
+		 
+		 
+		 
+		 	 
+	 function checkElements() {
+		 
+		 var observer = new window.MutationObserver(function (mutations) {
+			 
+			 mutations.forEach(function(mutation) {
+				 
+				 // console.log(mutation);
+
+				 
+				 if(typeof mutation.target.className === "string" && mutation.target.className.indexOf("lp-window-root") > -1){
+
+					 var myLoader = document.getElementsByClassName("lp_top-text");
+					 var myLoaderLength = myLoader.length;
+					 for (var a = 0; a < myLoaderLength; a++){
+						 myLoader[a].textContent = "Ne ngarkim";
+					 }
+					 
+					 // document.getElementsByClassName('lp_rotator')[0].innerHTML = "<img src='https://res.cloudinary.com/djtjkiytu/image/upload/v1585247439/Screenshot_2020-03-26_at_19.25.34.png'>"
+					 document.getElementsByClassName('lp_rotator')[0].innerHTML = ""
+
+				 }
+				 
+				 
+				 if(typeof mutation.target.className === "string" && mutation.target.className.indexOf("lp_top-text") > -1){
+					 
+					 addLanguage();
+					
+				 }
+				 
+				 if(typeof mutation.target.className === "string" && mutation.target.className.indexOf("lp_top_menu") > -1){
+					 
+					 var mySmallIcon = document.getElementsByClassName("lp_chatting-with-icon");
+					 var mySmallIconLength = mySmallIcon.length;
+					 for (var a = 0; a < mySmallIconLength; a++){
+						var myNode =  mySmallIcon[0];
+						 myNode.parentNode.removeChild(myNode);
+						 // node.style.display = 'none';
+					 }
+					 
+					 var refreshIntervalTextBox;
+					 refreshIntervalTextBox = setInterval(function(){
+						 if(jQuery('.lpview_form_textarea').length > 0){
+							 
+							 if(jQuery(".lpview_form_textarea")[0].className.indexOf("lpc_mobile") > -1){
+								 jQuery(".lpview_form_textarea").css("width","320px");
+							 } else{
+								 jQuery(".lpview_form_textarea").css("width","250px");
+							 }
+
+							 clearInterval(refreshIntervalTextBox);
+						 }
+					 }, 100);
+					 
+
+				 }
+				 
+
+				 if(typeof mutation.target.className === "string" && mutation.target.className.indexOf("lp_location_bottom") > -1){
+
+					 
+					 if(document.getElementsByClassName("lp_actions_button").length > 0){
+						 var node = document.getElementsByClassName("lp_actions_button")[0];
+						 node.style.display = 'none';
+						 // node.parentNode.removeChild(node);
+						 jQuery(".lp_input_area").css("position","absolute");
+						 jQuery(".lp_input_area").css("left","10px");
+					 }
+					 
+
+				 }
+
+
+			 });
+		 });
+
+
+		 observer.observe(document, {
+			 childList: true,
+			 subtree:true
+		 });
+
+
+
+		 
+	}
+		 checkElements();
+		 
+	 </script>
+
+ 
+ 
+ 
+ <title>VFTest</title>
+ 
+
+ </head>
+ <body>
+	 
+ <script>
+	 
+
+
+	 
+
+  
+
+ </script>
+ 
+ 
+</body>
+  
+
+  
+</html>
